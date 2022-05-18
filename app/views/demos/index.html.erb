@@ -1,0 +1,9 @@
+<ol>
+<% @demo.each do |demo| %>
+    <li>
+  <h1><%= link_to "#{ demo.name }", demo_path(demo.id) %></h1>
+    </li><br>
+    <hr>
+<% end %>
+</ol>
+<h2><%= link_to "Create a new Demo", new_demo_path %></h2>

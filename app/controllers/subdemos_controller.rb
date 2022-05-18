@@ -1,0 +1,2 @@
+class SubdemosController < ApplicationController
+end
