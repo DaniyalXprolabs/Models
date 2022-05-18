@@ -1,0 +1,10 @@
+<h2>Add a Book</h2>
+<%= form_with model: [@author,@author.books.build] do |form|%>
+  <p><%= form.label :name %>
+    <%= form.text_field :name %>
+  </p>
+  <p><%= form.label :language %>
+    <%= form.text_field :language %>
+  </p>
+  <%= form.submit %>
+<% end %>

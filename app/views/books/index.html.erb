@@ -1,0 +1,7 @@
+<h1>Books written by <%= @author.name %> </h1>
+<% @author.books.each do |book| %>
+  <h2><%= book.name %></h2>
+  <h3><%= book.language %></h3>
+  <h4>Written by: <%= book.author.name %></h4>
+  <h4>from: <%= book.author.city %></h4>
+<% end %>
